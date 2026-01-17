@@ -1,5 +1,5 @@
 <?php
 
-    echo("This is my firsat time writing php code");
+    echo ("This is my first time writing php code");
     
 ?>
