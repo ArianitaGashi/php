@@ -1,11 +1,11 @@
 <?php
 $host = 'localhost';
-$db = 'testnita1';
+$db = 'mod13';
 $username = 'root';
 $password = '';
 
 try{
-    $conn = new PDO("mysql:host=$host; dbname=$db", $username, $password);
+    $connect = new PDO("mysql:host=$host; dbname=$db", $username, $password);
 
 }
 catch(Exeption $e){
