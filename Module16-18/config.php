@@ -6,11 +6,9 @@ $password = '';
 
 try{
     $connect = new PDO("mysql:host=$host; dbname=$db", $username, $password);
-    
-    echo "Successful";
 
 }
-catch(Exeption $e){
+catch(Exception $e){
     echo "Something went wrong";
 }
 
