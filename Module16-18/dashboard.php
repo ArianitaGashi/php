@@ -37,24 +37,24 @@ $user_data = $selectUser->fetchAll();
         <th>Username</th>
         <th>Email</th>
         <th>Password</th>
+        <th>Delete</th>
         <th></th>
     </tr>
 
     <tr>
         <?php
             foreach($user_data as $user){
-        
         ?>
 
-        <td><?= $user['name']?></td>
-        <td><?= $user['surname']?></td>
-        <td><?= $user['username']?></td>
-        <td><?= $user['email']?></td>
-        <td><?= $user['password']?></td>
-
+        <td><?= $user['name'];?></td>
+        <td><?= $user['surname'];?></td>
+        <td><?= $user['username'];?></td>
+        <td><?= $user['email'];?></td>
+        <td><?= $user['password'];?></td>
+        <td><a href="delete.php?id=<?= $user['id']; ?>">DELETE</a></td>
         </tr>
 
-                <?php } ?>
+        <?php } ?>
 
 </table>
 </body>
